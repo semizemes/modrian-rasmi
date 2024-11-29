@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+
+    .sentr{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+    }
+    .container{
+      display: grid;
+      width: 748px;
+      height: 748px;
+      grid-template-rows: 414px 130px 155px 22px;
+      grid-template-columns: 320px 198px 153px 50px;
+      gap: 9px;
+      background-color: #000;
+    }
+
+    div *{
+      background-color: #F0F1EC;
+    }
+    .qizil{
+      background-color: #E72F24;
+    }
+    .oq1{
+      grid-column: 3 span;
+    }
+    .oq2{
+      grid-area: 2/ 1/ 4/2;
+    }
+    .oq3{
+      grid-area: 2 / 2 / 4 / 4;
+    }
+    .kok{
+      background-color: #004592;
+      grid-area: 2/-2/3/-1;
+      border-bottom: 10px solid #000;
+
+    }
+    .oq4{
+      grid-area: -3/4/-1/5;
+    }
+    .sariq{
+      grid-area: 4/2/5/3;
+      background-color: #F9D01E;
+    }
+    .qora{
+      background-color: #232629;
+      grid-area: 4 / 3 / 5 / 4;
+    }
+  </style>
+</head>
+
+<body>
+
+   <div class="sentr">
+    <div class="container">
+      <div class="qizil"></div>
+      <div class="oq1"></div>
+      <div class="oq2"></div>
+      <div class="oq3"></div>
+      <div class="kok"></div>
+      <div class="oq4"></div>
+      <div class="sariq"></div>
+      <div class="qora"></div>
+      <div class="oq"></div>
+     </div>
+   </div>
+</body>
+
+</html>
